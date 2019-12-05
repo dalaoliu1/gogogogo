@@ -1,0 +1,9 @@
+spring :
+  datasource:
+    username: root
+    password: 1
+    url: jdbc:mysql://localhost/test?useSSL=false&&serveTimezone=GMT%288
+    drive-class-name: com.mysql.jdbc.Driver
+    
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  type-aliases-package: com.example.demo.mapper
