@@ -1,5 +1,8 @@
 package com.example.demo.service;
 
-public class UserService {
+import com.example.demo.model.SysUser;
+
+public interface UserService {
+	public int register (SysUser user);
 
 }
