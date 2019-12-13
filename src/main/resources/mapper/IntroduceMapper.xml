@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+       
+ <mapper namespace="com.example.demo.mapper.IntroduceMapper">
+ <insert id="insertIntroduce" parameterType="com.example.demo.model.SysIntroduce">
+    insert into sysintroduce
+    (name,phone,email,personwrite)
+    values
+    (#{name},#{phone},#{email},#{personwrite})
+ </insert>
+ <select id="selectIntroduceByName" parameterType="java.lang.String" resultType="com.example.demo.model.SysIntroduce">
+  select*from sysintroduce
+  where
+  name =  #{name}
+ </select> 
+ </mapper>
