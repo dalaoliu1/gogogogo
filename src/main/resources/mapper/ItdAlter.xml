@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.ItdAlterMapper">
+ <update id="updateIntroduce" parameterType="com.example.demo.model.SysAlter">
+    update sysintroduce
+    SET
+    name=#{name},
+    phone=#{phone}
+    ,email=#{email},
+    personwrite=#{personwrite}
+    WHERE
+     name = #{name}
+ </update>
+ <select id="selectItdAlterByName" parameterType="java.lang.String" resultType="com.example.demo.model.SysAlter">
+  select*from sysintroduce
+  where
+  name = #{name}
+ </select> 
+ </mapper>
