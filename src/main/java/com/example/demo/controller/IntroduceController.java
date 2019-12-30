@@ -12,7 +12,7 @@ import net.sf.json.JSONObject;
 
 @RestController
 @RequestMapping("/introduce")
-
+//实现个人信息的增加的Controller
 public class IntroduceController {
 	@Autowired
 	IntroduceService introduceService;

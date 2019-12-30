@@ -15,6 +15,7 @@ public class ItdSelectServiceimpl implements ItdSelectService{
 	@Override
 	public List<SysItdSelect> getpersonalList() {
 		// TODO Auto-generated method stub
+		//调用mapper层实现个人信息删除
 		return itdselectMapper.selectAllItdSelect();
 	}
 
