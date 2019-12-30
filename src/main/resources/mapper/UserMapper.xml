@@ -6,13 +6,13 @@
 <mapper namespace="com.example.demo.mapper.UserMapper">
  <insert id="insertUser" parameterType="com.example.demo.model.SysUser">
     insert into sysuser
-    values
     (username,password,name,age,sex)
-    (#{username},#{password},#{name},#{age},#{gender}))
+    values
+    (#{username},#{password},#{name},#{age},#{gender})
  </insert>
- <select id="insertUsername" parameterType="java.lang.String" resultType="com.example.demo.model.SysUser">
-  selet*from sysuer
+ <select id="selectUserByUsername" parameterType="java.lang.String" resultType="com.example.demo.model.SysUser">
+  select * from sysuser
   where
-  username=#{username}
+  username = #{username}
  </select>
 </mapper>

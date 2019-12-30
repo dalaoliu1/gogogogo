@@ -1,7 +1,7 @@
 package com.example.demo.model;
 
 public class SysUser {
-	int UID;
+	
 	String username;
 	String password;
 	String name;
@@ -9,12 +9,6 @@ public class SysUser {
 	String gender;
 	String avatar;
 	
-	public int getUID() {
-		return UID;
-	}
-	public void setUID(int uID) {
-		UID = uID;
-	}
 	public String getUsername() {
 		return username;
 	}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.example.demo.mapper.DiscussMapper">
+       <insert id="addcontent" parameterType="com.example.demo.model.Discuss">
+    		insert into comment
+    		(username,content,data,favour)
+   	 		values
+    		(#{username},#{content},#{data},#{favour})
+ 		</insert>
+ 		<select id="selectusername" parameterType="java.lang.String" resultType="com.example.demo.model.Discuss">
+  			select * from comment
+  			where
+  			username = #{username}
+ 		</select>
+ </mapper>
