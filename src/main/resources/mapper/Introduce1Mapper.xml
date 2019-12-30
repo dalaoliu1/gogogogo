@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <mapper namespace="com.example.demo.mapper.Introduce1Mapper">
+ <delete id="deleteIntroduce" parameterType="com.example.demo.model.SysIntroduce1">
+     delete from sysintroduce where uID=#{uID}
+ </delete>
+
+ <select id="selectIntroduceByUID" parameterType="java.lang.Integer" resultType="com.example.demo.model.SysIntroduce1">
+  select*from sysintroduce
+  where
+  uID =  #{uID}
+ </select> 
+ </mapper>
