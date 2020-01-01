@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <mapper namespace="com.example.demo.mapper.AdRmMapper">
+        
+        <delete id="removeAds" parameterType="com.example.demo.model.AdRem">
+        DELETE FROM ad_id WHERE name = #{name}
+        </delete>
+        <select id="selectAdByname" parameterType="java.lang.String" resultType="com.example.demo.model.AdRem">
+        select * from ad_id
+        where
+        name=#{name}
+        </select>
+        
+        </mapper>
